@@ -2,7 +2,7 @@
 
 > **Synthetic test data — no real transactions. All payment actions use a deterministic simulator/test-mode adapter.**
 
-RecoverAI is a runnable MVP for **Razorpay AI Builder Internship 2026 — Track 03: AI Revenue Recovery**. It receives failed recurring-payment cases, scores recoverability, selects one recovery action, enforces strict safety rules, simulates the approved action, measures explicitly recovered revenue, and stores a complete audit trail.
+RecoverAI is a runnable MVP . It receives failed recurring-payment cases, scores recoverability, selects one recovery action, enforces strict safety rules, simulates the approved action, measures explicitly recovered revenue, and stores a complete audit trail.
 
 ## Problem and Razorpay relevance
 
@@ -159,29 +159,9 @@ No production claims are made. Run the fixed seed and click **Process All Pendin
 
 Production integrations could add Razorpay signed webhooks/test APIs, PostgreSQL, Redis/Celery workers, MFA and user RBAC, WebSocket updates, Slack/email alerts, RAG-based policy retrieval, and PDF reports. These are intentionally outside this MVP.
 
-## Five-minute pitch video
 
-1. **0:00–0:35** — Failed recurring payments and RecoverAI's value.
-2. **0:35–1:05** — FastAPI/React/SQLite and LangGraph architecture.
-3. **1:05–2:00** — Process a safe technical-error retry and open its audit trail.
-4. **2:00–2:35** — Show expired-card or retry-limit blocking.
-5. **2:35–3:10** — Approve/reject a high-value escalation.
-6. **3:10–3:35** — Submit the same idempotency key twice; show HTTP 409/audit evidence.
-7. **3:35–4:30** — Process all, explain metrics, charts, and CSV.
-8. **4:30–5:00** — Measured synthetic results, limitations, and next steps.
-
-Full presenter notes: [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md).
-
-## Screenshots
-
-| Screen | Placeholder |
-|---|---|
-| Login | `docs/screenshots/login.png` |
-| Dashboard | `docs/screenshots/dashboard.png` |
-| Case audit drawer | `docs/screenshots/case-audit.png` |
-| Human review | `docs/screenshots/human-review.png` |
 
 ## Disclaimer
 
-This independent internship project is not an official Razorpay product. **Synthetic test data — no real transactions.**
+This independent project is not an official Razorpay product. **Synthetic test data — no real transactions.**
 
